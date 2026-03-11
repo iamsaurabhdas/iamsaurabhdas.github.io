@@ -4,12 +4,22 @@
 <head>
 <title>Saurabh Das | QA Lead</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 body{
 font-family:Arial;
 margin:0;
 background:#f5f7fb;
+transition:0.3s;
+}
+
+/* DARK MODE */
+
+.dark{
+background:#0f172a;
+color:white;
 }
 
 /* NAVBAR */
@@ -40,8 +50,8 @@ flex-wrap:wrap;
 }
 
 .hero img{
-width:150px;
-height:150px;
+width:160px;
+height:160px;
 border-radius:50%;
 margin-right:30px;
 border:4px solid white;
@@ -49,14 +59,14 @@ border:4px solid white;
 
 .hero-text h1{
 margin:0;
-font-size:40px;
+font-size:42px;
 }
 
 .hero-text p{
 font-size:20px;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 section{
 max-width:900px;
@@ -67,8 +77,16 @@ margin-top:20px;
 border-radius:10px;
 }
 
+.dark section{
+background:#1e293b;
+}
+
 h2{
 color:#0f172a;
+}
+
+.dark h2{
+color:white;
 }
 
 /* SKILLS */
@@ -81,6 +99,10 @@ margin:6px;
 border-radius:6px;
 }
 
+.dark .skills span{
+background:#334155;
+}
+
 /* BUTTON */
 
 .button{
@@ -91,6 +113,19 @@ padding:10px 18px;
 border-radius:6px;
 text-decoration:none;
 margin-top:10px;
+}
+
+/* TOGGLE */
+
+.toggle{
+position:fixed;
+top:15px;
+right:15px;
+background:white;
+border:none;
+padding:8px 12px;
+cursor:pointer;
+border-radius:6px;
 }
 
 /* FOOTER */
@@ -107,17 +142,20 @@ color:gray;
 
 <body>
 
+<button class="toggle" onclick="toggleMode()">🌙 Dark Mode</button>
+
 <nav>
 
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
+<a href="#tools">Tools</a>
 <a href="#services">Services</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 
 <div class="hero">
 
@@ -140,11 +178,12 @@ color:gray;
 <h2>About Me</h2>
 
 <p>
-I am a QA Team Lead with strong experience in Manual Testing, API Testing,
-Test Case Design, and Product Quality Assurance.
+QA Team Lead with experience in Manual Testing, API Testing,
+Automation Testing and Product Quality Assurance.
 
-Currently working on multiple Insticator products including Commenting Unit,
-Content Engagement Unit, Trending Now and Article Sentiments.
+Currently working on Insticator products including
+Commenting Unit, Content Engagement Unit,
+Trending Now and Article Sentiments.
 </p>
 
 </section>
@@ -169,6 +208,25 @@ Content Engagement Unit, Trending Now and Article Sentiments.
 
 </section>
 
+<!-- TOOLS -->
+
+<section id="tools">
+
+<h2>Tools</h2>
+
+<ul>
+
+<li>JIRA</li>
+<li>Postman</li>
+<li>Chrome DevTools</li>
+<li>Charles Proxy</li>
+<li>GitHub</li>
+<li>TestRail</li>
+
+</ul>
+
+</section>
+
 <!-- SERVICES -->
 
 <section id="services">
@@ -180,7 +238,7 @@ Content Engagement Unit, Trending Now and Article Sentiments.
 <li>Website Testing</li>
 <li>Mobile App Testing</li>
 <li>API Testing</li>
-<li>Test Case Creation</li>
+<li>Test Case Writing</li>
 <li>Bug Reporting</li>
 
 </ul>
@@ -196,11 +254,23 @@ Content Engagement Unit, Trending Now and Article Sentiments.
 <ul>
 
 <li>Commenting Unit QA Testing</li>
-<li>Content Engagement Unit QA</li>
+<li>Content Engagement Unit Testing</li>
 <li>Trending Now Module Testing</li>
 <li>Article Sentiments Testing</li>
 
 </ul>
+
+</section>
+
+<!-- RESUME -->
+
+<section>
+
+<h2>Resume</h2>
+
+<p>Download my resume below:</p>
+
+<a class="button" href="resume.pdf">Download Resume</a>
 
 </section>
 
@@ -210,7 +280,7 @@ Content Engagement Unit, Trending Now and Article Sentiments.
 
 <h2>Contact</h2>
 
-<p>Email: sdasjaipur@hotmail.com</p>
+<p>Email: your-email@gmail.com</p>
 
 <p>
 LinkedIn:
@@ -226,6 +296,14 @@ View Profile
 <p>© 2026 Saurabh Das</p>
 
 </footer>
+
+<script>
+
+function toggleMode(){
+document.body.classList.toggle("dark")
+}
+
+</script>
 
 </body>
 
