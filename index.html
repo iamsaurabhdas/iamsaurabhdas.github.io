@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -60,11 +61,6 @@ margin-bottom:10px;
 .hero h3{
 font-weight:400;
 margin-bottom:15px;
-}
-
-.hero p{
-max-width:700px;
-margin:auto;
 }
 
 .hero-buttons{
@@ -137,19 +133,27 @@ border-radius:10px;
 
 .blog{
 display:none;
-margin-top:25px;
-padding:25px;
+margin-top:30px;
+padding:30px;
 background:white;
 border-radius:10px;
+line-height:1.8;
 }
 
 .dark .blog{
 background:#1e293b;
 }
 
-form{
-max-width:600px;
-margin:auto;
+.toggle{
+position:fixed;
+top:15px;
+right:15px;
+background:#2563eb;
+color:white;
+border:none;
+padding:10px;
+border-radius:8px;
+cursor:pointer;
 }
 
 input,textarea{
@@ -165,18 +169,6 @@ background:#2563eb;
 color:white;
 padding:12px 20px;
 border:none;
-border-radius:8px;
-cursor:pointer;
-}
-
-.toggle{
-position:fixed;
-top:15px;
-right:15px;
-background:#2563eb;
-color:white;
-border:none;
-padding:10px;
 border-radius:8px;
 cursor:pointer;
 }
@@ -199,8 +191,6 @@ color:gray;
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
-<a href="#cases">Case Studies</a>
-<a href="#ai">AI QA</a>
 <a href="#blog">Blog</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -213,7 +203,7 @@ color:gray;
 
 <p>
 Experienced QA professional specializing in manual testing,
-automation testing, API testing and AI-assisted QA workflows.
+API testing, automation testing and AI-assisted QA workflows.
 </p>
 
 <div class="hero-buttons">
@@ -264,82 +254,6 @@ Commenting Unit, Content Engagement Unit and Trending Now modules.
 
 </section>
 
-<section id="experience">
-
-<h2>Professional Experience</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>QA Team Lead</h3>
-<p><b>Insticator</b> (2017–Present)</p>
-<p>Leading QA activities for publisher engagement products.</p>
-</div>
-
-<div class="card">
-<h3>Senior Test Engineer</h3>
-<p>ArcGate Technologies</p>
-</div>
-
-<div class="card">
-<h3>Software Test Engineer</h3>
-<p>GirnarSoft, InTimeTec</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="cases">
-
-<h2>QA Case Studies</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Production Comment Bug</h3>
-<p>Found race condition causing comment duplication in production.</p>
-</div>
-
-<div class="card">
-<h3>API Performance Issue</h3>
-<p>Identified slow database queries causing API latency.</p>
-</div>
-
-<div class="card">
-<h3>Mobile Rendering Issue</h3>
-<p>Detected CSS conflict breaking engagement widget on mobile.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="ai">
-
-<h2>AI Assisted QA</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>AI Test Case Generation</h3>
-<p>Using AI tools to generate edge cases and improve coverage.</p>
-</div>
-
-<div class="card">
-<h3>Bug Investigation</h3>
-<p>Using AI for faster root cause analysis.</p>
-</div>
-
-<div class="card">
-<h3>Automation Strategy</h3>
-<p>Exploring AI-assisted testing workflows.</p>
-</div>
-
-</div>
-
-</section>
-
 <section id="blog">
 
 <h2>QA Blog</h2>
@@ -356,6 +270,16 @@ Commenting Unit, Content Engagement Unit and Trending Now modules.
 <a onclick="toggleBlog('b2')" style="cursor:pointer;color:#2563eb">Read Article</a>
 </div>
 
+<div class="card">
+<h3>Using AI for Test Case Generation</h3>
+<a onclick="toggleBlog('b3')" style="cursor:pointer;color:#2563eb">Read Article</a>
+</div>
+
+<div class="card">
+<h3>Writing Better Bug Reports</h3>
+<a onclick="toggleBlog('b4')" style="cursor:pointer;color:#2563eb">Read Article</a>
+</div>
+
 </div>
 
 <div id="b1" class="blog">
@@ -363,13 +287,12 @@ Commenting Unit, Content Engagement Unit and Trending Now modules.
 <h3>Regression Testing Strategy</h3>
 
 <p>
-Regression testing ensures that existing features continue to work
-after code changes.
+Regression testing ensures that existing functionality continues to work after code changes.
 </p>
 
 <p>
-A strong regression suite focuses on critical business flows,
-high-risk areas and previously fixed defects.
+A strong regression suite focuses on high-risk modules, core user journeys
+and previously fixed defects.
 </p>
 
 </div>
@@ -379,12 +302,43 @@ high-risk areas and previously fixed defects.
 <h3>API Testing Best Practices</h3>
 
 <p>
-API testing validates backend logic without relying on UI.
+API testing verifies backend logic independently from UI.
 </p>
 
 <p>
 QA engineers should validate response codes, schema,
-performance and authentication behavior.
+authentication and performance.
+</p>
+
+</div>
+
+<div id="b3" class="blog">
+
+<h3>Using AI to Generate Test Cases</h3>
+
+<p>
+AI tools can generate edge cases and test scenarios quickly.
+</p>
+
+<p>
+QA engineers can use AI to improve test coverage
+and accelerate regression preparation.
+</p>
+
+</div>
+
+<div id="b4" class="blog">
+
+<h3>Writing Better Bug Reports</h3>
+
+<p>
+A good bug report should include steps to reproduce,
+expected result and actual result.
+</p>
+
+<p>
+Clear bug reports improve communication
+between QA and development teams.
 </p>
 
 </div>
@@ -395,13 +349,13 @@ performance and authentication behavior.
 
 <h2>Contact Me</h2>
 
-<form>
+<form action="https://formsubmit.co/sdasjaipur@hotmail.com" method="POST">
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Your Email" required>
+<input type="email" name="email" placeholder="Your Email" required>
 
-<textarea rows="5" placeholder="Your Message"></textarea>
+<textarea name="message" rows="5" placeholder="Your Message"></textarea>
 
 <button type="submit">Send Message</button>
 
