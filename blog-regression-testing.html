@@ -1,25 +1,162 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Regression Testing Strategy</title>
+
+<title>How I Approach Regression Testing | Saurabh Das</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f7fb;
+}
+
+nav{
+background:#0f172a;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.article{
+
+max-width:800px;
+margin:auto;
+padding:40px;
+background:white;
+margin-top:40px;
+border-radius:10px;
+line-height:1.7;
+
+}
+
+h1{
+color:#0f172a;
+}
+
+h2{
+margin-top:30px;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+background:#2563eb;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:gray;
+}
+
+</style>
+
 </head>
 
-<body style="font-family:Arial;max-width:800px;margin:auto;padding:40px">
+<body>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="index.html#blog">Blog</a>
+<a href="index.html#contact">Contact</a>
+
+</nav>
+
+<div class="article">
 
 <h1>How I Approach Regression Testing</h1>
 
+<p><strong>Author:</strong> Saurabh Das | QA Lead</p>
+
 <p>
-Regression testing ensures new updates do not break existing functionality.
+Regression testing is an essential part of the software testing process.
+Whenever new features or bug fixes are added, testers must ensure that
+existing functionality continues to work correctly.
+</p>
+
+<h2>Why Regression Testing is Important</h2>
+
+<p>
+In modern software development, releases happen frequently.
+Without proper regression testing, new changes can easily
+break previously working features.
 </p>
 
 <ul>
-<li>Identify impacted modules</li>
-<li>Execute critical test suites</li>
-<li>Validate APIs</li>
-<li>Verify UI behavior</li>
+<li>Prevents unexpected production issues</li>
+<li>Ensures system stability</li>
+<li>Maintains product quality</li>
 </ul>
 
-<a href="index.html">Back to Portfolio</a>
+<h2>My Regression Testing Workflow</h2>
+
+<p>
+As a QA Lead, I follow a structured regression testing approach.
+</p>
+
+<ol>
+
+<li>Identify impacted modules based on code changes</li>
+
+<li>Prioritize critical user flows such as login, commenting, and payments</li>
+
+<li>Execute previously failed test cases first</li>
+
+<li>Validate APIs and backend responses</li>
+
+<li>Verify UI functionality across browsers</li>
+
+</ol>
+
+<h2>Tools I Use</h2>
+
+<ul>
+
+<li>JIRA for bug tracking</li>
+
+<li>Postman for API validation</li>
+
+<li>Chrome DevTools for debugging</li>
+
+<li>Charles Proxy for network inspection</li>
+
+</ul>
+
+<h2>Final Thoughts</h2>
+
+<p>
+A strong regression testing strategy ensures product reliability
+and improves release confidence. QA teams should continuously
+improve regression coverage and automate repetitive tests
+wherever possible.
+</p>
+
+<a class="button" href="index.html">⬅ Back to Portfolio</a>
+
+</div>
+
+<footer>
+
+<p>© 2026 Saurabh Das</p>
+
+</footer>
 
 </body>
+
 </html>
