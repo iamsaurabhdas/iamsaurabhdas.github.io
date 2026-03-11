@@ -1,53 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>API Testing Best Practices | Saurabh Das</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* SAME STYLE AS ABOVE */
+
+body{font-family:Arial;margin:0;background:#f5f7fb;transition:0.3s;}
+.dark{background:#0f172a;color:white;}
+nav{background:#0f172a;padding:15px;text-align:center;}
+nav a{color:white;margin:0 12px;text-decoration:none;font-weight:bold;}
+.article{max-width:800px;margin:auto;padding:40px;background:white;margin-top:40px;border-radius:10px;line-height:1.7;}
+.dark .article{background:#1e293b;}
+h1{color:#0f172a;}
+.dark h1{color:white;}
+.button{display:inline-block;margin-top:20px;background:#2563eb;color:white;padding:10px 18px;border-radius:6px;text-decoration:none;}
+.toggle{position:fixed;top:15px;right:15px;padding:8px 12px;border:none;border-radius:6px;cursor:pointer;}
+footer{text-align:center;padding:40px;color:gray;}
+
+</style>
+
+</head>
+
+<body>
+
+<button class="toggle" onclick="toggleMode()">🌙 Dark</button>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="index.html#blog">Blog</a>
+<a href="index.html#contact">Contact</a>
+</nav>
+
+<div class="article">
+
 <h1>API Testing Best Practices</h1>
 
 <p><strong>Author:</strong> Saurabh Das | QA Lead</p>
 
 <p>
-API testing plays a critical role in modern applications where
-front-end and backend services communicate through APIs.
-Testing APIs ensures that data is correctly transmitted
-between services.
+API testing validates the communication between frontend
+applications and backend services. It ensures that business logic,
+data processing, and integrations function correctly.
 </p>
 
 <h2>Why API Testing Matters</h2>
 
 <ul>
-
 <li>Detects issues before UI testing</li>
-<li>Validates backend logic</li>
-<li>Ensures system integration works correctly</li>
-
+<li>Ensures backend reliability</li>
+<li>Validates system integrations</li>
 </ul>
 
-<h2>Key API Tests I Perform</h2>
+<h2>Key API Tests</h2>
 
 <ol>
-
 <li>Status code validation</li>
-
-<li>Response schema validation</li>
-
+<li>Response schema verification</li>
 <li>Error handling scenarios</li>
-
-<li>Authentication testing</li>
-
-<li>Performance testing</li>
-
+<li>Authentication and authorization testing</li>
+<li>Performance checks</li>
 </ol>
 
-<h2>Tools I Use for API Testing</h2>
+<h2>Tools I Use</h2>
 
 <ul>
-
 <li>Postman</li>
-
 <li>Chrome DevTools Network tab</li>
-
 <li>Charles Proxy</li>
-
 </ul>
 
 <p>
-API testing significantly reduces production bugs
-and helps identify backend issues early in development.
+Strong API testing reduces production bugs and helps identify backend
+issues early in the development cycle.
 </p>
+
+<a class="button" href="index.html">⬅ Back to Portfolio</a>
+
+</div>
+
+<footer>
+<p>© 2026 Saurabh Das</p>
+</footer>
+
+<script>
+function toggleMode(){
+document.body.classList.toggle("dark")
+}
+</script>
+
+</body>
+</html>
