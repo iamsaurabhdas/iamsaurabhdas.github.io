@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-<title>Saurabh Das | QA Team Lead Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saurabh Das | QA Team Lead</title>
 
 <style>
 
-body{
-font-family:Arial;
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
 background:#f5f7fb;
+color:#1e293b;
+line-height:1.6;
 transition:0.3s;
 }
 
 .dark{
 background:#0f172a;
-color:white;
+color:#e2e8f0;
 }
 
-/* NAVBAR */
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
 
 nav{
 background:#0f172a;
-padding:15px;
+padding:18px;
 text-align:center;
 }
 
@@ -33,53 +45,63 @@ nav a{
 color:white;
 margin:0 14px;
 text-decoration:none;
-font-weight:bold;
+font-weight:600;
 }
 
-/* HERO */
-
 .hero{
-padding:80px 20px;
 text-align:center;
-background:#0f172a;
+padding:80px 20px;
+background:linear-gradient(135deg,#2563eb,#1e3a8a);
 color:white;
 }
 
 .hero img{
 width:140px;
 border-radius:50%;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:38px;
+margin-bottom:10px;
+}
+
+.hero h3{
+font-weight:400;
+margin-bottom:20px;
 }
 
 .hero a{
 display:inline-block;
-margin:10px;
-background:#2563eb;
-color:white;
-padding:12px 20px;
+margin:8px;
+padding:12px 22px;
+background:white;
+color:#1e3a8a;
 border-radius:8px;
 text-decoration:none;
+font-weight:bold;
 }
 
-/* SECTIONS */
-
-.section{
-max-width:1000px;
-margin:auto;
-padding:50px 20px;
+section{
+margin-top:60px;
 }
 
-.cards{
+h2{
+margin-bottom:20px;
+font-size:28px;
+}
+
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
-margin-top:25px;
 }
 
 .card{
 background:white;
 padding:20px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
 .dark .card{
@@ -87,55 +109,50 @@ background:#1e293b;
 }
 
 .card a{
-text-decoration:none;
 color:#2563eb;
 font-weight:bold;
+text-decoration:none;
 }
 
-/* SKILLS */
-
 .skill{
-max-width:700px;
-margin:auto;
+margin-bottom:15px;
 }
 
 .bar{
+height:10px;
 background:#ddd;
-height:12px;
 border-radius:6px;
-margin-bottom:20px;
+margin-top:5px;
 }
 
 .progress{
-height:12px;
+height:10px;
 background:#2563eb;
 border-radius:6px;
 }
 
-/* CONTACT */
-
-.contact{
-text-align:center;
+.blog{
+display:none;
+margin-top:30px;
 }
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:40px;
-color:gray;
-}
-
-/* DARK MODE BUTTON */
 
 .toggle{
 position:fixed;
 top:15px;
 right:15px;
-padding:8px 12px;
+background:#2563eb;
+color:white;
 border:none;
-border-radius:6px;
+padding:10px;
+border-radius:8px;
 cursor:pointer;
+}
+
+footer{
+text-align:center;
+margin-top:60px;
+padding:40px;
+color:gray;
 }
 
 </style>
@@ -148,112 +165,90 @@ cursor:pointer;
 
 <nav>
 
-<a href="#">Home</a>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#tools">Tools</a>
 <a href="#experience">Experience</a>
 <a href="#portfolio">QA Work</a>
-<a href="#ai">AI in QA</a>
+<a href="#ai">AI QA</a>
 <a href="#blog">Blog</a>
-<a href="bug-gallery.html">Bug Gallery</a>
-<a href="testcases.html">Test Cases</a>
-<a href="bug-report-example.html">Bug Report</a>
 <a href="#contact">Contact</a>
 
 </nav>
 
-<!-- HERO -->
-
-<section class="hero">
+<div class="hero">
 
 <img src="profile.jpg">
 
 <h1>Saurabh Das</h1>
 
-<h3>QA Team Lead | 16+ Years in Software Testing</h3>
+<h3>QA Team Lead | 16+ Years Software Testing Experience</h3>
 
 <p>
-QA Team Lead with 16+ years of experience in Manual Testing,
-Automation Testing, API Testing, Mobile Testing, and Web Application Testing.
-Experienced in leading QA teams and ensuring high-quality software releases.
+Experienced QA leader specializing in Web Testing, Mobile Testing,
+Automation, API Testing and AI-assisted QA workflows.
 </p>
 
 <a href="resume.pdf" download>Download Resume</a>
 
 <a href="https://www.linkedin.com/in/saurabh-das-b2269513/" target="_blank">
-View LinkedIn
+LinkedIn Profile
 </a>
 
-</section>
+</div>
 
-<!-- ABOUT -->
+<div class="container">
 
-<section class="section" id="about">
+<section id="about">
 
 <h2>About Me</h2>
 
 <p>
 
-I am a QA Team Lead with more than <b>16 years of experience in
-software testing and quality assurance</b>. I specialize in
-manual testing, automation testing, API validation,
-regression testing, and end-to-end product quality assurance.
+I am a QA Team Lead with more than <b>16 years of experience in software testing</b>.
+Currently working with Insticator where I lead QA for multiple publisher
+engagement products including Commenting Unit and Content Engagement tools.
 
-Currently working with <b>Insticator Inc.</b> since 2017,
-leading QA activities across multiple products including
-Commenting Unit, Content Engagement Unit, and other engagement
-platforms used by global publishers.
+My expertise includes manual testing, regression testing, API validation,
+automation testing, mobile testing and end-to-end product quality assurance.
 
-I have strong experience working in Agile environments,
-designing test strategies, identifying critical bugs,
-and collaborating with development teams to deliver
-stable and reliable software.
+I enjoy investigating complex bugs, improving test coverage and mentoring QA teams.
 
 </p>
 
 </section>
 
-<!-- SKILLS -->
+<section id="skills">
 
-<section class="section" id="skills">
+<h2>QA Skills</h2>
 
-<h2>Core QA Skills</h2>
-
-<div class="skill">
-
-<p>Manual Testing</p>
+<div class="skill">Manual Testing
 <div class="bar"><div class="progress" style="width:95%"></div></div>
+</div>
 
-<p>Regression Testing</p>
+<div class="skill">Regression Testing
 <div class="bar"><div class="progress" style="width:92%"></div></div>
+</div>
 
-<p>API Testing</p>
+<div class="skill">API Testing
 <div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
 
-<p>Automation Testing</p>
+<div class="skill">Automation Testing
 <div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
 
-<p>Test Case Design</p>
-<div class="bar"><div class="progress" style="width:90%"></div></div>
-
-<p>Bug Investigation</p>
-<div class="bar"><div class="progress" style="width:92%"></div></div>
-
-<p>QA Leadership</p>
-<div class="bar"><div class="progress" style="width:90%"></div></div>
-
+<div class="skill">Bug Investigation
+<div class="bar"><div class="progress" style="width:93%"></div></div>
 </div>
 
 </section>
 
-<!-- TOOLS -->
-
-<section class="section" id="tools">
+<section id="tools">
 
 <h2>Tools & Technologies</h2>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
 <h3>Testing Tools</h3>
@@ -261,7 +256,7 @@ stable and reliable software.
 </div>
 
 <div class="card">
-<h3>Automation Tools</h3>
+<h3>Automation</h3>
 <p>Selenium IDE, QTP, JMeter</p>
 </div>
 
@@ -272,199 +267,188 @@ stable and reliable software.
 
 <div class="card">
 <h3>Methodologies</h3>
-<p>Agile, Waterfall, V-Model, SDLC, STLC</p>
+<p>Agile, Waterfall, SDLC, STLC</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- EXPERIENCE -->
-
-<section class="section" id="experience">
+<section id="experience">
 
 <h2>Professional Experience</h2>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
-
 <h3>QA Team Lead</h3>
-<p><b>Insticator Inc.</b> (2017 – Present)</p>
-
-<p>
-Leading QA activities for engagement platforms including
-Commenting Unit and Content Engagement Unit used by
-major global publishers.
-</p>
-
+<p><b>Insticator</b> (2017-Present)</p>
+<p>Leading QA activities for publisher engagement platforms.</p>
 </div>
 
 <div class="card">
-
 <h3>Senior Software Test Engineer</h3>
-<p><b>ArcGate</b> (2012 – 2017)</p>
-
-<p>
-Worked on enterprise applications performing manual
-and automation testing, regression testing,
-and API validation.
-</p>
-
+<p><b>ArcGate</b> (2012-2017)</p>
+<p>Worked on enterprise applications including automation testing.</p>
 </div>
 
 <div class="card">
-
 <h3>Software Test Engineer</h3>
-
-<p>
-Worked with multiple companies including
-InTimeTec, Neerja Software, and GirnarSoft
-focusing on manual testing and automation testing.
-</p>
-
+<p>Experience with InTimeTec, GirnarSoft and Neerja Software.</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- PORTFOLIO -->
-
-<section class="section" id="portfolio">
+<section id="portfolio">
 
 <h2>QA Portfolio</h2>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
-<h3>Bug Investigation Examples</h3>
-<p>Examples of bugs discovered during testing.</p>
-<a href="bug-gallery.html">View Bugs</a>
+<h3>Bug Investigation</h3>
+<p>Examples of real bugs found during QA testing.</p>
 </div>
 
 <div class="card">
-<h3>Sample Test Cases</h3>
-<p>Examples of structured QA test cases.</p>
-<a href="testcases.html">View Test Cases</a>
+<h3>Test Case Design</h3>
+<p>Sample structured test cases written for real scenarios.</p>
 </div>
 
 <div class="card">
-<h3>Bug Report Example</h3>
-<p>Example of professional bug documentation.</p>
-<a href="bug-report-example.html">View Bug Report</a>
+<h3>Bug Reports</h3>
+<p>Professional bug documentation examples.</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- AI QA -->
+<section id="ai">
 
-<section class="section" id="ai">
+<h2>AI in QA</h2>
 
-<h2>AI Assisted QA</h2>
-
-<div class="cards">
+<div class="grid">
 
 <div class="card">
-
 <h3>AI Test Case Generation</h3>
-
-<p>
-Using AI tools to generate test scenarios and
-improve regression coverage for complex applications.
-</p>
-
+<p>Using AI to generate test scenarios and improve coverage.</p>
 </div>
 
 <div class="card">
-
 <h3>AI Bug Investigation</h3>
-
-<p>
-Using AI assistants to analyze logs, network calls,
-and identify possible root causes faster.
-</p>
-
+<p>Using AI tools to analyze logs and network calls faster.</p>
 </div>
 
 <div class="card">
-
 <h3>AI Assisted QA Workflow</h3>
-
-<p>
-Leveraging modern AI tools to improve QA productivity
-and accelerate testing cycles.
-</p>
-
+<p>Integrating AI into daily QA processes.</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- BLOG -->
-
-<section class="section" id="blog">
+<section id="blog">
 
 <h2>QA Blog</h2>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
-<h3>How I Approach Regression Testing</h3>
-<a href="blog-regression-testing.html">Read Article</a>
+<h3>Regression Testing Strategy</h3>
+<a onclick="showBlog('b1')">Read Article</a>
 </div>
 
 <div class="card">
 <h3>API Testing Best Practices</h3>
-<a href="blog-api-testing.html">Read Article</a>
+<a onclick="showBlog('b2')">Read Article</a>
 </div>
 
 <div class="card">
-<h3>Using AI to Generate Test Cases</h3>
-<a href="blog-ai-testcases.html">Read Article</a>
+<h3>AI for QA Engineers</h3>
+<a onclick="showBlog('b3')">Read Article</a>
 </div>
 
 <div class="card">
-<h3>Common Bug Reporting Mistakes</h3>
-<a href="blog-bug-reporting.html">Read Article</a>
+<h3>Writing Better Bug Reports</h3>
+<a onclick="showBlog('b4')">Read Article</a>
 </div>
 
+</div>
+
+<div id="b1" class="blog">
+<h3>Regression Testing Strategy</h3>
+<p>
+Regression testing ensures that new changes do not break existing functionality.
+A strong regression suite helps teams maintain product stability.
+</p>
+</div>
+
+<div id="b2" class="blog">
+<h3>API Testing Best Practices</h3>
+<p>
+API testing focuses on validating responses, status codes,
+performance and security.
+Tools like Postman and automated frameworks improve reliability.
+</p>
+</div>
+
+<div id="b3" class="blog">
+<h3>AI for QA Engineers</h3>
+<p>
+AI tools can assist testers in generating test cases,
+finding edge cases and improving productivity.
+</p>
+</div>
+
+<div id="b4" class="blog">
+<h3>Writing Better Bug Reports</h3>
+<p>
+A clear bug report includes steps to reproduce,
+expected result, actual result and screenshots.
+</p>
 </div>
 
 </section>
 
-<!-- CONTACT -->
-
-<section class="section contact" id="contact">
+<section id="contact">
 
 <h2>Contact</h2>
 
-<p>Email: sdasjaipur@hotmail.com</p>
+<p>Email: <b>sdasjaipur@hotmail.com</b></p>
 
 <p>
-
 LinkedIn:
 <a href="https://www.linkedin.com/in/saurabh-das-b2269513/" target="_blank">
 View Profile
 </a>
-
 </p>
 
 </section>
 
 <footer>
 
-<p>© 2026 Saurabh Das | QA Team Lead Portfolio</p>
+© 2026 Saurabh Das | QA Portfolio
 
 </footer>
+
+</div>
 
 <script>
 
 function toggleMode(){
 document.body.classList.toggle("dark")
+}
+
+function showBlog(id){
+
+document.querySelectorAll(".blog").forEach(b=>b.style.display="none")
+
+document.getElementById(id).style.display="block"
+
 }
 
 </script>
