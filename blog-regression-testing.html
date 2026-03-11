@@ -13,6 +13,12 @@ body{
 font-family:Arial;
 margin:0;
 background:#f5f7fb;
+transition:0.3s;
+}
+
+.dark{
+background:#0f172a;
+color:white;
 }
 
 nav{
@@ -29,7 +35,6 @@ font-weight:bold;
 }
 
 .article{
-
 max-width:800px;
 margin:auto;
 padding:40px;
@@ -37,15 +42,18 @@ background:white;
 margin-top:40px;
 border-radius:10px;
 line-height:1.7;
+}
 
+.dark .article{
+background:#1e293b;
 }
 
 h1{
 color:#0f172a;
 }
 
-h2{
-margin-top:30px;
+.dark h1{
+color:white;
 }
 
 .button{
@@ -56,6 +64,16 @@ color:white;
 padding:10px 18px;
 border-radius:6px;
 text-decoration:none;
+}
+
+.toggle{
+position:fixed;
+top:15px;
+right:15px;
+padding:8px 12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
 }
 
 footer{
@@ -69,6 +87,8 @@ color:gray;
 </head>
 
 <body>
+
+<button class="toggle" onclick="toggleMode()">🌙 Dark</button>
 
 <nav>
 
@@ -85,66 +105,41 @@ color:gray;
 <p><strong>Author:</strong> Saurabh Das | QA Lead</p>
 
 <p>
-Regression testing is an essential part of the software testing process.
-Whenever new features or bug fixes are added, testers must ensure that
-existing functionality continues to work correctly.
+Regression testing ensures that new code changes do not break existing functionality.
+In modern agile environments where deployments happen frequently, regression testing
+plays a critical role in maintaining product stability.
 </p>
 
-<h2>Why Regression Testing is Important</h2>
-
-<p>
-In modern software development, releases happen frequently.
-Without proper regression testing, new changes can easily
-break previously working features.
-</p>
+<h2>Why Regression Testing Matters</h2>
 
 <ul>
 <li>Prevents unexpected production issues</li>
-<li>Ensures system stability</li>
 <li>Maintains product quality</li>
+<li>Ensures new features do not break old functionality</li>
 </ul>
 
 <h2>My Regression Testing Workflow</h2>
 
-<p>
-As a QA Lead, I follow a structured regression testing approach.
-</p>
-
 <ol>
-
-<li>Identify impacted modules based on code changes</li>
-
-<li>Prioritize critical user flows such as login, commenting, and payments</li>
-
-<li>Execute previously failed test cases first</li>
-
-<li>Validate APIs and backend responses</li>
-
-<li>Verify UI functionality across browsers</li>
-
+<li>Identify impacted modules</li>
+<li>Prioritize critical test flows</li>
+<li>Execute core regression suites</li>
+<li>Validate APIs and UI behavior</li>
+<li>Report and track defects</li>
 </ol>
 
 <h2>Tools I Use</h2>
 
 <ul>
-
-<li>JIRA for bug tracking</li>
-
-<li>Postman for API validation</li>
-
-<li>Chrome DevTools for debugging</li>
-
-<li>Charles Proxy for network inspection</li>
-
+<li>JIRA</li>
+<li>Postman</li>
+<li>Chrome DevTools</li>
+<li>Charles Proxy</li>
 </ul>
 
-<h2>Final Thoughts</h2>
-
 <p>
-A strong regression testing strategy ensures product reliability
-and improves release confidence. QA teams should continuously
-improve regression coverage and automate repetitive tests
-wherever possible.
+A well-planned regression strategy improves release confidence and
+helps teams deliver reliable software.
 </p>
 
 <a class="button" href="index.html">⬅ Back to Portfolio</a>
@@ -156,6 +151,14 @@ wherever possible.
 <p>© 2026 Saurabh Das</p>
 
 </footer>
+
+<script>
+
+function toggleMode(){
+document.body.classList.toggle("dark")
+}
+
+</script>
 
 </body>
 
