@@ -15,8 +15,6 @@ background:#f5f7fb;
 transition:0.3s;
 }
 
-/* DARK MODE */
-
 .dark{
 background:#0f172a;
 color:white;
@@ -66,7 +64,7 @@ font-size:42px;
 font-size:20px;
 }
 
-/* SECTION */
+/* SECTIONS */
 
 section{
 max-width:900px;
@@ -81,8 +79,6 @@ border-radius:10px;
 background:#1e293b;
 }
 
-/* HEADINGS */
-
 h2{
 color:#0f172a;
 }
@@ -90,8 +86,6 @@ color:#0f172a;
 .dark h2{
 color:white;
 }
-
-/* LINKS */
 
 a{
 color:#2563eb;
@@ -115,6 +109,22 @@ border-radius:6px;
 background:#334155;
 }
 
+/* PROGRESS BARS */
+
+.bar{
+background:#ddd;
+border-radius:20px;
+margin:8px 0;
+}
+
+.progress{
+background:#2563eb;
+padding:6px;
+color:white;
+border-radius:20px;
+text-align:right;
+}
+
 /* BUTTON */
 
 .button{
@@ -127,7 +137,7 @@ text-decoration:none;
 margin-top:10px;
 }
 
-/* TOGGLE */
+/* DARK MODE BUTTON */
 
 .toggle{
 position:fixed;
@@ -161,10 +171,8 @@ color:gray;
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#tools">Tools</a>
-<a href="#services">Services</a>
 <a href="#projects">Projects</a>
-<a href="#ai">AI QA</a>
-<a href="#methodology">Methodology</a>
+<a href="#case">Case Study</a>
 <a href="#hire">Hire Me</a>
 <a href="#contact">Contact</a>
 
@@ -193,32 +201,25 @@ color:gray;
 <h2>About Me</h2>
 
 <p>
-QA Team Lead with strong experience in Manual Testing, API Testing,
-Automation Testing and Product Quality Assurance.
+QA Team Lead with strong experience in Manual Testing,
+API Testing, Regression Testing and Product Quality Assurance.
 
-Currently working on Insticator products including Commenting Unit,
+Working on Insticator products including Commenting Unit,
 Content Engagement Unit, Trending Now and Article Sentiments.
 </p>
 
 </section>
 
-<!-- SKILLS -->
+<!-- SKILL BARS -->
 
 <section id="skills">
 
 <h2>Testing Skills</h2>
 
-<div class="skills">
-
-<span>Manual Testing</span>
-<span>API Testing</span>
-<span>Automation Testing</span>
-<span>Regression Testing</span>
-<span>Bug Reporting</span>
-<span>Test Case Design</span>
-<span>AI Assisted QA</span>
-
-</div>
+<div class="bar"><div class="progress" style="width:90%">Manual Testing</div></div>
+<div class="bar"><div class="progress" style="width:80%">API Testing</div></div>
+<div class="bar"><div class="progress" style="width:75%">Automation Testing</div></div>
+<div class="bar"><div class="progress" style="width:85%">Bug Reporting</div></div>
 
 </section>
 
@@ -226,35 +227,15 @@ Content Engagement Unit, Trending Now and Article Sentiments.
 
 <section id="tools">
 
-<h2>Tools I Use</h2>
+<h2>Testing Tools</h2>
 
 <ul>
-
 <li>JIRA</li>
 <li>Postman</li>
 <li>Chrome DevTools</li>
 <li>Charles Proxy</li>
 <li>TestRail</li>
 <li>GitHub</li>
-
-</ul>
-
-</section>
-
-<!-- SERVICES -->
-
-<section id="services">
-
-<h2>Freelance QA Services</h2>
-
-<ul>
-
-<li>Website Testing</li>
-<li>Mobile App Testing</li>
-<li>API Testing</li>
-<li>Manual Testing</li>
-<li>Bug Reporting</li>
-
 </ul>
 
 </section>
@@ -266,46 +247,34 @@ Content Engagement Unit, Trending Now and Article Sentiments.
 <h2>QA Projects</h2>
 
 <ul>
-
 <li>Commenting Unit QA Testing</li>
-<li>Content Engagement Unit Testing</li>
+<li>Content Engagement Unit QA</li>
 <li>Trending Now Module Testing</li>
 <li>Article Sentiments Testing</li>
-
 </ul>
 
 </section>
 
-<!-- AI QA -->
+<!-- QA CASE STUDY -->
 
-<section id="ai">
+<section id="case">
 
-<h2>AI Assisted QA Experiments</h2>
+<h2>QA Case Study: Testing a Commenting System</h2>
 
-<ul>
-
-<li>AI Test Case Generator</li>
-<li>AI Bug Report Assistant</li>
-<li>AI Regression Test Planning</li>
-
-</ul>
-
-</section>
-
-<!-- TESTING METHODOLOGY -->
-
-<section id="methodology">
-
-<h2>Testing Methodology</h2>
+<p><b>Test Strategy:</b></p>
 
 <ul>
-
-<li>Risk Based Testing</li>
-<li>Regression Testing Strategy</li>
-<li>API Testing Workflow</li>
-<li>AI Assisted Test Case Creation</li>
-
+<li>Functional testing for posting comments</li>
+<li>Spam and moderation testing</li>
+<li>Cross-browser testing</li>
+<li>Performance testing for high traffic</li>
+<li>API response validation</li>
 </ul>
+
+<p>
+This approach ensures stability and scalability
+for high engagement commenting platforms.
+</p>
 
 </section>
 
@@ -313,49 +282,52 @@ Content Engagement Unit, Trending Now and Article Sentiments.
 
 <section>
 
-<h2>Bug Report Examples</h2>
+<h2>Bug Report Example</h2>
 
 <p>
-Example bug reports can include UI issues, API errors,
-and functional defects discovered during testing.
+Example: Comment submission fails when user posts emoji.
+Root cause found in API validation logic.
+Bug documented with reproduction steps and logs.
 </p>
 
 </section>
 
-<!-- TEST CASES -->
+<!-- TEST CASE -->
 
 <section>
 
-<h2>Test Case Samples</h2>
+<h2>Test Case Example</h2>
 
 <p>
-Structured test cases covering functional testing,
-edge cases and regression scenarios.
+Test Case: Verify user can submit comment successfully.
 </p>
+
+<ul>
+<li>Open article page</li>
+<li>Enter comment</li>
+<li>Click submit</li>
+<li>Verify comment appears</li>
+</ul>
 
 </section>
 
-<!-- HIRE ME -->
+<!-- HIRE -->
 
 <section id="hire">
 
 <h2>Hire Me</h2>
 
-<p>I am available for freelance QA testing work including:</p>
+<p>I am available for freelance QA testing:</p>
 
 <ul>
-
 <li>Website Testing</li>
 <li>Mobile App Testing</li>
 <li>API Testing</li>
 <li>Manual Testing</li>
 <li>Bug Reporting</li>
-
 </ul>
 
-<a class="button" href="mailto:sdasjaipur@gmail.com">
-Contact Me
-</a>
+<a class="button" href="mailto:sdasjaipur@hotmail.com">Contact Me</a>
 
 </section>
 
@@ -364,8 +336,6 @@ Contact Me
 <section>
 
 <h2>Resume</h2>
-
-<p>Download my resume:</p>
 
 <a class="button" href="resume.pdf" download>
 Download Resume
@@ -379,7 +349,7 @@ Download Resume
 
 <h2>Contact</h2>
 
-<p>Email: sdasjaipur@gmail.com</p>
+<p>Email: sdasjaipur@hotmail.com</p>
 
 <p>
 LinkedIn:
@@ -391,7 +361,7 @@ View Profile
 <p>
 GitHub:
 <a href="https://github.com/iamsaurabhdas" target="_blank">
-View My GitHub
+github.com/iamsaurabhdas
 </a>
 </p>
 
@@ -400,6 +370,7 @@ View My GitHub
 <footer>
 
 <p>© 2026 Saurabh Das</p>
+<p>QA Lead | Software Testing | AI Ready QA</p>
 
 </footer>
 
