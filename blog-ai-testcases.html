@@ -1,44 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Using AI to Generate Test Cases | Saurabh Das</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* SAME STYLE */
+
+body{font-family:Arial;margin:0;background:#f5f7fb;transition:0.3s;}
+.dark{background:#0f172a;color:white;}
+nav{background:#0f172a;padding:15px;text-align:center;}
+nav a{color:white;margin:0 12px;text-decoration:none;font-weight:bold;}
+.article{max-width:800px;margin:auto;padding:40px;background:white;margin-top:40px;border-radius:10px;line-height:1.7;}
+.dark .article{background:#1e293b;}
+h1{color:#0f172a;}
+.dark h1{color:white;}
+.button{display:inline-block;margin-top:20px;background:#2563eb;color:white;padding:10px 18px;border-radius:6px;text-decoration:none;}
+.toggle{position:fixed;top:15px;right:15px;padding:8px 12px;border:none;border-radius:6px;cursor:pointer;}
+footer{text-align:center;padding:40px;color:gray;}
+
+</style>
+
+</head>
+
+<body>
+
+<button class="toggle" onclick="toggleMode()">🌙 Dark</button>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="index.html#blog">Blog</a>
+<a href="index.html#contact">Contact</a>
+</nav>
+
+<div class="article">
+
 <h1>Using AI to Generate Test Cases</h1>
 
-<p><strong>Author:</strong> Saurabh Das</p>
+<p><strong>Author:</strong> Saurabh Das | QA Lead</p>
 
 <p>
-Artificial Intelligence is transforming many industries,
-including software testing. AI-powered tools can assist
-QA engineers in generating test scenarios faster.
+Artificial Intelligence is increasingly helping QA engineers
+improve productivity. AI tools can assist testers in generating
+test case ideas and identifying edge scenarios.
 </p>
 
 <h2>Benefits of AI in Testing</h2>
 
 <ul>
-
 <li>Faster test case generation</li>
-
-<li>Better edge case detection</li>
-
 <li>Improved test coverage</li>
-
+<li>Better edge case discovery</li>
 </ul>
 
 <h2>How I Use AI in QA</h2>
 
 <p>
-I experiment with AI tools to generate test case ideas
-and improve test documentation. However, manual review
-is always required to ensure business logic is correct.
+AI tools help generate initial test scenarios which I review
+and refine manually based on business requirements.
 </p>
 
 <h2>Limitations</h2>
 
 <ul>
-
-<li>AI may miss domain-specific scenarios</li>
-
-<li>Generated tests require human validation</li>
-
+<li>AI may miss domain-specific cases</li>
+<li>Human validation is always required</li>
 </ul>
 
 <p>
-AI should be considered a helpful assistant
-rather than a replacement for human testers.
+AI should be considered a productivity assistant rather than
+a replacement for human testers.
 </p>
+
+<a class="button" href="index.html">⬅ Back to Portfolio</a>
+
+</div>
+
+<footer>
+<p>© 2026 Saurabh Das</p>
+</footer>
+
+<script>
+function toggleMode(){
+document.body.classList.toggle("dark")
+}
+</script>
+
+</body>
+</html>
