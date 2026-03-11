@@ -6,9 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Saurabh Das | QA Team Lead Portfolio</title>
+<title>Saurabh Das | QA Team Lead</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -16,159 +16,182 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:'Inter',sans-serif;
 }
 
 body{
-background:#f4f7fb;
-color:#1f2937;
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
 transition:0.3s;
 }
 
-.dark{
-background:#0f172a;
-color:#e5e7eb;
-}
+/* NAVBAR */
 
 nav{
-background:#111827;
-padding:18px;
-text-align:center;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:20px;
+background:#020617;
+border-bottom:1px solid #1e293b;
 position:sticky;
 top:0;
 z-index:100;
 }
 
 nav a{
-color:white;
-margin:0 15px;
+color:#cbd5f5;
 text-decoration:none;
 font-weight:500;
 }
 
+nav a:hover{
+color:#60a5fa;
+}
+
+/* HERO */
+
 .hero{
-background:linear-gradient(135deg,#2563eb,#1e40af);
-color:white;
-padding:90px 20px;
+
 text-align:center;
+padding:100px 20px;
+
+background:radial-gradient(circle at top,#1d4ed8,#020617);
+
 }
 
 .hero h1{
-font-size:42px;
+font-size:48px;
 margin-bottom:10px;
 }
 
-.hero h3{
+.hero h2{
 font-weight:400;
-margin-bottom:15px;
+color:#cbd5f5;
+margin-bottom:20px;
 }
 
-.hero-buttons{
-margin-top:25px;
+.hero p{
+max-width:650px;
+margin:auto;
+color:#94a3b8;
 }
 
-.hero-buttons a{
-display:inline-block;
-margin:8px;
-padding:12px 24px;
+.buttons{
+margin-top:30px;
+}
+
+.buttons a{
+
+padding:12px 22px;
 border-radius:8px;
-background:white;
-color:#1e3a8a;
 text-decoration:none;
+margin:8px;
 font-weight:600;
 }
+
+.btn-primary{
+background:#3b82f6;
+color:white;
+}
+
+.btn-secondary{
+border:1px solid #3b82f6;
+color:#3b82f6;
+}
+
+/* CONTAINER */
 
 .container{
 max-width:1100px;
 margin:auto;
-padding:40px 20px;
+padding:60px 20px;
 }
 
+/* SECTION */
+
 section{
-margin-top:60px;
+margin-bottom:80px;
 }
 
 h2{
-text-align:center;
-margin-bottom:25px;
+font-size:32px;
+margin-bottom:30px;
 }
+
+/* GRID */
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
+gap:24px;
 }
 
+/* CARD */
+
 .card{
-background:white;
+
+background:rgba(30,41,59,0.6);
+backdrop-filter:blur(8px);
 padding:25px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+border-radius:14px;
+border:1px solid #1e293b;
 transition:0.3s;
+
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-6px);
+border-color:#3b82f6;
 }
 
-.dark .card{
-background:#1e293b;
-}
+/* SKILLS */
 
 .skill{
 margin-bottom:20px;
 }
 
 .bar{
-height:10px;
-background:#e5e7eb;
+height:8px;
+background:#1e293b;
 border-radius:10px;
 }
 
 .progress{
-height:10px;
-background:#2563eb;
+height:8px;
+background:#3b82f6;
 border-radius:10px;
 }
 
-.blog{
+/* BLOG */
+
+.blog-content{
 display:none;
 margin-top:30px;
+background:#020617;
 padding:30px;
-background:white;
 border-radius:10px;
-line-height:1.8;
+border:1px solid #1e293b;
 }
 
-.dark .blog{
-background:#1e293b;
-}
-
-.toggle{
-position:fixed;
-top:15px;
-right:15px;
-background:#2563eb;
-color:white;
-border:none;
-padding:10px;
-border-radius:8px;
-cursor:pointer;
-}
+/* CONTACT */
 
 input,textarea{
 width:100%;
 padding:12px;
 margin-bottom:15px;
 border-radius:8px;
-border:1px solid #ddd;
+border:1px solid #1e293b;
+background:#020617;
+color:white;
 }
 
 button{
-background:#2563eb;
+background:#3b82f6;
 color:white;
-padding:12px 20px;
 border:none;
+padding:12px 20px;
 border-radius:8px;
 cursor:pointer;
 }
@@ -176,7 +199,7 @@ cursor:pointer;
 footer{
 text-align:center;
 padding:40px;
-color:gray;
+color:#64748b;
 }
 
 </style>
@@ -185,74 +208,141 @@ color:gray;
 
 <body>
 
-<button class="toggle" onclick="toggleMode()">🌙</button>
-
 <nav>
+
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
 <a href="#blog">Blog</a>
 <a href="#contact">Contact</a>
+
 </nav>
+
+<!-- HERO -->
 
 <div class="hero">
 
 <h1>Saurabh Das</h1>
 
-<h3>QA Team Lead | 16+ Years Experience</h3>
+<h2>QA Team Lead • Software Testing Specialist</h2>
 
 <p>
-Experienced QA professional specializing in manual testing,
-API testing, automation testing and AI-assisted QA workflows.
+
+16+ years of experience in manual testing, automation strategy, API testing and product quality improvement.
+
 </p>
 
-<div class="hero-buttons">
+<div class="buttons">
 
-<a href="resume.pdf" download>Download Resume</a>
+<a class="btn-primary" href="resume.pdf" download>Download Resume</a>
 
-<a href="https://www.linkedin.com/in/saurabh-das-b2269513/" target="_blank">
-LinkedIn Profile
+<a class="btn-secondary" href="https://www.linkedin.com/in/saurabh-das-b2269513/" target="_blank">
+LinkedIn
 </a>
 
 </div>
 
 </div>
 
+
 <div class="container">
+
+<!-- ABOUT -->
 
 <section id="about">
 
 <h2>About Me</h2>
 
 <p>
-QA Team Lead with more than 16 years of experience in software testing.
+
+I am a QA Team Lead with more than 16 years of experience in software testing.
 Currently leading QA activities for Insticator engagement products including
 Commenting Unit, Content Engagement Unit and Trending Now modules.
+
 </p>
 
 </section>
+
+
+<!-- SKILLS -->
 
 <section id="skills">
 
 <h2>QA Skills</h2>
 
-<div class="skill">Manual Testing
+<div class="skill">
+
+Manual Testing
+
 <div class="bar"><div class="progress" style="width:95%"></div></div>
+
 </div>
 
-<div class="skill">Regression Testing
+<div class="skill">
+
+Regression Testing
+
 <div class="bar"><div class="progress" style="width:90%"></div></div>
+
 </div>
 
-<div class="skill">API Testing
+<div class="skill">
+
+API Testing
+
 <div class="bar"><div class="progress" style="width:85%"></div></div>
+
 </div>
 
-<div class="skill">Automation Testing
+<div class="skill">
+
+Automation Testing
+
 <div class="bar"><div class="progress" style="width:80%"></div></div>
+
 </div>
 
 </section>
+
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>QA Team Lead</h3>
+
+<p>Insticator (2017–Present)</p>
+
+</div>
+
+<div class="card">
+
+<h3>Senior Test Engineer</h3>
+
+<p>ArcGate Technologies</p>
+
+</div>
+
+<div class="card">
+
+<h3>Test Engineer</h3>
+
+<p>GirnarSoft • InTimeTec</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BLOG -->
 
 <section id="blog">
 
@@ -261,89 +351,99 @@ Commenting Unit, Content Engagement Unit and Trending Now modules.
 <div class="grid">
 
 <div class="card">
-<h3>Regression Testing Strategy</h3>
-<a onclick="toggleBlog('b1')" style="cursor:pointer;color:#2563eb">Read Article</a>
-</div>
-
-<div class="card">
-<h3>API Testing Best Practices</h3>
-<a onclick="toggleBlog('b2')" style="cursor:pointer;color:#2563eb">Read Article</a>
-</div>
-
-<div class="card">
-<h3>Using AI for Test Case Generation</h3>
-<a onclick="toggleBlog('b3')" style="cursor:pointer;color:#2563eb">Read Article</a>
-</div>
-
-<div class="card">
-<h3>Writing Better Bug Reports</h3>
-<a onclick="toggleBlog('b4')" style="cursor:pointer;color:#2563eb">Read Article</a>
-</div>
-
-</div>
-
-<div id="b1" class="blog">
 
 <h3>Regression Testing Strategy</h3>
 
-<p>
-Regression testing ensures that existing functionality continues to work after code changes.
-</p>
+<p onclick="toggleBlog('b1')" style="color:#60a5fa;cursor:pointer">Read Article</p>
+
+</div>
+
+<div class="card">
+
+<h3>API Testing Best Practices</h3>
+
+<p onclick="toggleBlog('b2')" style="color:#60a5fa;cursor:pointer">Read Article</p>
+
+</div>
+
+<div class="card">
+
+<h3>AI Test Case Generation</h3>
+
+<p onclick="toggleBlog('b3')" style="color:#60a5fa;cursor:pointer">Read Article</p>
+
+</div>
+
+<div class="card">
+
+<h3>Writing Better Bug Reports</h3>
+
+<p onclick="toggleBlog('b4')" style="color:#60a5fa;cursor:pointer">Read Article</p>
+
+</div>
+
+</div>
+
+
+<div id="b1" class="blog-content">
+
+<h3>Regression Testing Strategy</h3>
 
 <p>
-A strong regression suite focuses on high-risk modules, core user journeys
-and previously fixed defects.
+
+Regression testing ensures existing functionality continues to work after new changes are introduced.
+
+A strong regression suite focuses on core business flows, critical integrations and previously fixed defects.
+
 </p>
 
 </div>
 
-<div id="b2" class="blog">
+
+<div id="b2" class="blog-content">
 
 <h3>API Testing Best Practices</h3>
 
 <p>
-API testing verifies backend logic independently from UI.
-</p>
 
-<p>
-QA engineers should validate response codes, schema,
-authentication and performance.
-</p>
+API testing validates backend functionality independent from UI.
 
-</div>
+QA engineers should verify response status codes, data structure, authentication and performance.
 
-<div id="b3" class="blog">
-
-<h3>Using AI to Generate Test Cases</h3>
-
-<p>
-AI tools can generate edge cases and test scenarios quickly.
-</p>
-
-<p>
-QA engineers can use AI to improve test coverage
-and accelerate regression preparation.
 </p>
 
 </div>
 
-<div id="b4" class="blog">
+
+<div id="b3" class="blog-content">
+
+<h3>AI Test Case Generation</h3>
+
+<p>
+
+AI tools can generate edge cases and improve testing coverage by analyzing requirements and system behaviour.
+
+</p>
+
+</div>
+
+
+<div id="b4" class="blog-content">
 
 <h3>Writing Better Bug Reports</h3>
 
 <p>
-A good bug report should include steps to reproduce,
-expected result and actual result.
-</p>
 
-<p>
-Clear bug reports improve communication
-between QA and development teams.
+A good bug report includes clear steps to reproduce, expected result, actual result and environment details.
+
 </p>
 
 </div>
 
 </section>
+
+
+<!-- CONTACT -->
 
 <section id="contact">
 
@@ -361,38 +461,30 @@ between QA and development teams.
 
 </form>
 
-<p style="text-align:center;margin-top:20px">
-Email: <b>sdasjaipur@hotmail.com</b>
-</p>
-
 </section>
 
 </div>
 
 <footer>
 
-© 2026 Saurabh Das | QA Portfolio
+© 2026 Saurabh Das • QA Portfolio
 
 </footer>
 
-<script>
 
-function toggleMode(){
-document.body.classList.toggle("dark")
-}
+<script>
 
 function toggleBlog(id){
 
 let blog=document.getElementById(id)
 
 if(blog.style.display==="block"){
-blog.style.display="none"
-}
-else{
 
-document.querySelectorAll(".blog").forEach(b=>{
-b.style.display="none"
-})
+blog.style.display="none"
+
+}else{
+
+document.querySelectorAll(".blog-content").forEach(b=>b.style.display="none")
 
 blog.style.display="block"
 
@@ -403,4 +495,5 @@ blog.style.display="block"
 </script>
 
 </body>
+
 </html>
