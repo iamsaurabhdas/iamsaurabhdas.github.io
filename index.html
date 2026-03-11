@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Saurabh Das | QA Lead</title>
 
@@ -8,25 +9,43 @@
 body{
 font-family:Arial;
 margin:0;
-background:#f4f6f9;
+background:#f5f7fb;
 }
 
-header{
+/* NAVBAR */
+
+nav{
 background:#0f172a;
-color:white;
+padding:15px;
 text-align:center;
-padding:70px 20px;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+
+header{
+text-align:center;
+padding:80px 20px;
+background:#1e293b;
+color:white;
 }
 
 header h1{
-margin:0;
 font-size:42px;
+margin:0;
 }
 
 header p{
 font-size:20px;
-margin-top:10px;
 }
+
+/* SECTIONS */
 
 section{
 max-width:900px;
@@ -41,6 +60,8 @@ h2{
 color:#0f172a;
 }
 
+/* SKILLS */
+
 .skills span{
 display:inline-block;
 background:#e2e8f0;
@@ -49,6 +70,20 @@ margin:6px;
 border-radius:6px;
 }
 
+/* BUTTON */
+
+.button{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+margin-top:10px;
+}
+
+/* FOOTER */
+
 footer{
 text-align:center;
 padding:30px;
@@ -56,9 +91,24 @@ color:gray;
 }
 
 </style>
+
 </head>
 
 <body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#tools">Tools</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<!-- HERO -->
 
 <header>
 
@@ -68,23 +118,27 @@ color:gray;
 
 </header>
 
-<section>
+<!-- ABOUT -->
+
+<section id="about">
 
 <h2>About Me</h2>
 
 <p>
 I am a QA Team Lead with strong experience in Manual Testing, API Testing,
-Test Case Design and Product Quality Assurance.
+Test Case Design, and Product Quality Assurance.
 
-Currently working on products like Commenting Unit, Content Engagement Unit,
-Trending Now and Article Sentiments.
+I have worked on multiple products including Commenting Unit,
+Content Engagement Unit, Trending Now, and Article Sentiments.
 </p>
 
 </section>
 
-<section>
+<!-- SKILLS -->
 
-<h2>Skills</h2>
+<section id="skills">
+
+<h2>Testing Skills</h2>
 
 <div class="skills">
 
@@ -92,52 +146,71 @@ Trending Now and Article Sentiments.
 <span>API Testing</span>
 <span>Automation Testing</span>
 <span>Regression Testing</span>
-<span>JIRA</span>
 <span>Test Case Design</span>
+<span>Bug Reporting</span>
 <span>AI Assisted QA</span>
 
 </div>
 
 </section>
 
-<section>
+<!-- TOOLS -->
 
-<h2>Projects</h2>
+<section id="tools">
+
+<h2>Tools I Use</h2>
 
 <ul>
 
-<li>Commenting Unit QA Testing</li>
-<li>Content Engagement Unit Testing</li>
-<li>Trending Now Module QA</li>
+<li>JIRA</li>
+<li>Postman</li>
+<li>Chrome DevTools</li>
+<li>Charles Proxy</li>
+<li>TestRail</li>
+<li>GitHub</li>
+
+</ul>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>QA Projects</h2>
+
+<ul>
+
+<li>Commenting Unit Testing</li>
+<li>Content Engagement Unit QA</li>
+<li>Trending Now Module Testing</li>
 <li>Article Sentiments Testing</li>
 
 </ul>
 
 </section>
 
+<!-- RESUME -->
+
 <section>
 
-<h2>Freelance QA Services</h2>
+<h2>Resume</h2>
 
-<ul>
+<p>You can download my resume here:</p>
 
-<li>Website Testing</li>
-<li>Mobile App Testing</li>
-<li>API Testing</li>
-<li>Test Case Writing</li>
-<li>Bug Reporting</li>
-
-</ul>
+<a class="button" href="#">Download Resume</a>
 
 </section>
 
-<section>
+<!-- CONTACT -->
+
+<section id="contact">
 
 <h2>Contact</h2>
 
-<p>Email: your-email@gmail.com</p>
+<p>Email: sdasjaipur@hotmail.com</p>
 
-<p>LinkedIn: linkedin.com/in/yourprofile</p>
+<p>LinkedIn: https://www.linkedin.com/in/saurabh-das-b2269513/</p>
 
 </section>
 
@@ -148,4 +221,5 @@ Trending Now and Article Sentiments.
 </footer>
 
 </body>
+
 </html>
