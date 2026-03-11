@@ -64,7 +64,7 @@ font-size:42px;
 font-size:20px;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 section{
 max-width:900px;
@@ -95,21 +95,7 @@ color:#2563eb;
 color:#60a5fa;
 }
 
-/* SKILLS */
-
-.skills span{
-display:inline-block;
-background:#e2e8f0;
-padding:8px 14px;
-margin:6px;
-border-radius:6px;
-}
-
-.dark .skills span{
-background:#334155;
-}
-
-/* PROGRESS BARS */
+/* SKILL BARS */
 
 .bar{
 background:#ddd;
@@ -135,6 +121,17 @@ padding:10px 18px;
 border-radius:6px;
 text-decoration:none;
 margin-top:10px;
+}
+
+/* FORM */
+
+input, textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:10px;
+border-radius:5px;
+border:1px solid #ccc;
 }
 
 /* DARK MODE BUTTON */
@@ -173,6 +170,7 @@ color:gray;
 <a href="#tools">Tools</a>
 <a href="#projects">Projects</a>
 <a href="#case">Case Study</a>
+<a href="#blog">Blog</a>
 <a href="#hire">Hire Me</a>
 <a href="#contact">Contact</a>
 
@@ -210,7 +208,7 @@ Content Engagement Unit, Trending Now and Article Sentiments.
 
 </section>
 
-<!-- SKILL BARS -->
+<!-- SKILLS -->
 
 <section id="skills">
 
@@ -255,26 +253,19 @@ Content Engagement Unit, Trending Now and Article Sentiments.
 
 </section>
 
-<!-- QA CASE STUDY -->
+<!-- CASE STUDY -->
 
 <section id="case">
 
 <h2>QA Case Study: Testing a Commenting System</h2>
 
-<p><b>Test Strategy:</b></p>
-
 <ul>
 <li>Functional testing for posting comments</li>
-<li>Spam and moderation testing</li>
-<li>Cross-browser testing</li>
-<li>Performance testing for high traffic</li>
+<li>Spam moderation validation</li>
 <li>API response validation</li>
+<li>Cross browser testing</li>
+<li>Performance testing under high traffic</li>
 </ul>
-
-<p>
-This approach ensures stability and scalability
-for high engagement commenting platforms.
-</p>
 
 </section>
 
@@ -286,9 +277,23 @@ for high engagement commenting platforms.
 
 <p>
 Example: Comment submission fails when user posts emoji.
-Root cause found in API validation logic.
+Root cause identified in API validation logic.
 Bug documented with reproduction steps and logs.
 </p>
+
+</section>
+
+<!-- BUG SCREENSHOTS -->
+
+<section>
+
+<h2>Bug Screenshot Gallery</h2>
+
+<p>Example issues discovered during testing.</p>
+
+<img src="bug1.png" width="250">
+<img src="bug2.png" width="250">
+<img src="bug3.png" width="250">
 
 </section>
 
@@ -296,17 +301,42 @@ Bug documented with reproduction steps and logs.
 
 <section>
 
-<h2>Test Case Example</h2>
+<h2>Test Case Sample</h2>
 
-<p>
-Test Case: Verify user can submit comment successfully.
-</p>
+<p>Verify user can submit comment successfully.</p>
 
 <ul>
 <li>Open article page</li>
 <li>Enter comment</li>
 <li>Click submit</li>
 <li>Verify comment appears</li>
+</ul>
+
+</section>
+
+<!-- DOWNLOAD TEST CASES -->
+
+<section>
+
+<h2>Download Sample Test Cases</h2>
+
+<a class="button" href="testcases.xlsx" download>
+Download Test Cases
+</a>
+
+</section>
+
+<!-- BLOG -->
+
+<section id="blog">
+
+<h2>QA Articles</h2>
+
+<ul>
+<li>How I Approach Regression Testing</li>
+<li>API Testing Best Practices Using Postman</li>
+<li>Using AI to Generate Test Cases</li>
+<li>Common Bug Reporting Mistakes</li>
 </ul>
 
 </section>
@@ -327,7 +357,9 @@ Test Case: Verify user can submit comment successfully.
 <li>Bug Reporting</li>
 </ul>
 
-<a class="button" href="mailto:sdasjaipur@hotmail.com">Contact Me</a>
+<a class="button" href="mailto:sdasjaipur@hotmail.com">
+Contact Me
+</a>
 
 </section>
 
@@ -340,6 +372,29 @@ Test Case: Verify user can submit comment successfully.
 <a class="button" href="resume.pdf" download>
 Download Resume
 </a>
+
+</section>
+
+<!-- CONTACT FORM -->
+
+<section>
+
+<h2>Send Me a Message</h2>
+
+<form action="mailto:sdasjaipur@hotmail.com" method="post" enctype="text/plain">
+
+<p>Name:</p>
+<input type="text" name="name" required>
+
+<p>Email:</p>
+<input type="email" name="email" required>
+
+<p>Message:</p>
+<textarea name="message" rows="5" required></textarea>
+
+<button class="button" type="submit">Send Message</button>
+
+</form>
 
 </section>
 
