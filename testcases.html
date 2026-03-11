@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Test Case Examples | Saurabh Das</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f7fb;
+}
+
+.dark{
+background:#0f172a;
+color:white;
+}
+
+nav{
+background:#0f172a;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th,td{
+padding:12px;
+border:1px solid #ddd;
+text-align:left;
+}
+
+.dark table{
+background:#1e293b;
+}
+
+.toggle{
+position:fixed;
+top:15px;
+right:15px;
+padding:8px 12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<button class="toggle" onclick="toggleMode()">🌙</button>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="index.html#blog">Blog</a>
+<a href="index.html#contact">Contact</a>
+
+</nav>
+
+<div class="container">
+
+<h1>Sample QA Test Cases</h1>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Test Scenario</th>
+<th>Steps</th>
+<th>Expected Result</th>
+</tr>
+
+<tr>
+<td>TC001</td>
+<td>User Login</td>
+<td>Enter valid email and password</td>
+<td>User successfully logs in</td>
+</tr>
+
+<tr>
+<td>TC002</td>
+<td>Invalid Password</td>
+<td>Enter incorrect password</td>
+<td>Error message displayed</td>
+</tr>
+
+<tr>
+<td>TC003</td>
+<td>Password Reset</td>
+<td>Click forgot password</td>
+<td>Password reset email sent</td>
+</tr>
+
+</table>
+
+</div>
+
+<script>
+
+function toggleMode(){
+document.body.classList.toggle("dark")
+}
+
+</script>
+
+</body>
+
+</html>
