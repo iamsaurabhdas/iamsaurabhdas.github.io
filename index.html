@@ -128,7 +128,7 @@ border-radius:6px;
 
 .blog{
 display:none;
-margin-top:30px;
+margin-top:25px;
 padding:25px;
 background:white;
 border-radius:10px;
@@ -171,8 +171,6 @@ color:gray;
 <a href="#skills">Skills</a>
 <a href="#tools">Tools</a>
 <a href="#experience">Experience</a>
-<a href="#portfolio">QA Work</a>
-<a href="#ai">AI QA</a>
 <a href="#blog">Blog</a>
 <a href="#contact">Contact</a>
 </nav>
@@ -185,7 +183,7 @@ color:gray;
 
 <p>
 Experienced QA professional specializing in manual testing,
-automation testing, API testing and AI-assisted QA workflows.
+API testing, automation testing and AI-assisted QA workflows.
 </p>
 
 <a href="resume.pdf" download>Download Resume</a>
@@ -203,15 +201,8 @@ LinkedIn Profile
 <h2>About Me</h2>
 
 <p>
-I am a QA Team Lead with more than <b>16 years of experience in software testing</b>.
-Currently working with Insticator where I lead QA activities for publisher
-engagement products including Commenting Unit and Content Engagement platforms.
-</p>
-
-<p>
-My expertise includes manual testing, regression testing, API testing,
-automation testing, and mobile application testing. I enjoy investigating
-complex bugs, improving test coverage and mentoring QA teams.
+I am a QA Team Lead with more than 16 years of experience in software testing.
+Currently working with Insticator leading QA activities for publisher engagement platforms.
 </p>
 
 </section>
@@ -237,69 +228,6 @@ complex bugs, improving test coverage and mentoring QA teams.
 <div class="bar"><div class="progress" style="width:80%"></div></div>
 </div>
 
-<div class="skill">Bug Investigation
-<div class="bar"><div class="progress" style="width:93%"></div></div>
-</div>
-
-</section>
-
-
-<section id="tools">
-
-<h2>Tools & Technologies</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Testing Tools</h3>
-<p>JIRA, Bugzilla, TestLink, Unfuddle</p>
-</div>
-
-<div class="card">
-<h3>Automation</h3>
-<p>Selenium IDE, QTP, JMeter</p>
-</div>
-
-<div class="card">
-<h3>Platforms</h3>
-<p>Web Applications, Android Apps, iOS Apps</p>
-</div>
-
-<div class="card">
-<h3>Methodologies</h3>
-<p>Agile, Waterfall, SDLC, STLC</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section id="experience">
-
-<h2>Professional Experience</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>QA Team Lead</h3>
-<p><b>Insticator</b> (2017 - Present)</p>
-<p>Leading QA activities for publisher engagement platforms.</p>
-</div>
-
-<div class="card">
-<h3>Senior Software Test Engineer</h3>
-<p><b>ArcGate</b> (2012 - 2017)</p>
-<p>Worked on enterprise applications including automation testing.</p>
-</div>
-
-<div class="card">
-<h3>Software Test Engineer</h3>
-<p>Experience with InTimeTec, GirnarSoft and Neerja Software.</p>
-</div>
-
-</div>
-
 </section>
 
 
@@ -311,120 +239,81 @@ complex bugs, improving test coverage and mentoring QA teams.
 
 <div class="card">
 <h3>Regression Testing Strategy</h3>
-<a onclick="showBlog('b1')">Read Article</a>
+<a onclick="toggleBlog('b1')">Read Article</a>
 </div>
 
 <div class="card">
 <h3>API Testing Best Practices</h3>
-<a onclick="showBlog('b2')">Read Article</a>
+<a onclick="toggleBlog('b2')">Read Article</a>
 </div>
 
 <div class="card">
 <h3>Using AI for Test Case Generation</h3>
-<a onclick="showBlog('b3')">Read Article</a>
+<a onclick="toggleBlog('b3')">Read Article</a>
 </div>
 
 <div class="card">
 <h3>Writing Better Bug Reports</h3>
-<a onclick="showBlog('b4')">Read Article</a>
+<a onclick="toggleBlog('b4')">Read Article</a>
 </div>
 
 </div>
 
 
 <div id="b1" class="blog">
-
-<h3>Regression Testing Strategy in Modern Software Development</h3>
+<h3>Regression Testing Strategy</h3>
 
 <p>
-Regression testing plays a critical role in maintaining product stability.
-Whenever new features are added or bugs are fixed, there is always a risk
-that existing functionality might break. Regression testing ensures that
-previously working features continue to function as expected.
+Regression testing ensures that new code changes do not break existing functionality.
+A strong regression strategy focuses on testing critical workflows, high-risk areas,
+and previously reported bug fixes.
 </p>
 
 <p>
-A good regression testing strategy focuses on identifying the most critical
-areas of the product and ensuring they are always covered in regression cycles.
-This includes core user flows, authentication, payments, integrations,
-and other business-critical functionality.
+Automation helps reduce regression cycle time while maintaining product quality.
+Combining manual exploratory testing with automated regression tests provides
+the best results.
 </p>
-
-<p>
-Maintaining a well-structured regression suite helps teams release software
-with confidence. Automation can also be introduced for frequently executed
-regression scenarios to reduce testing time and increase reliability.
-</p>
-
 </div>
 
 
 <div id="b2" class="blog">
-
-<h3>API Testing Best Practices for QA Engineers</h3>
+<h3>API Testing Best Practices</h3>
 
 <p>
-API testing is an essential part of modern software testing because many
-applications rely heavily on backend services and integrations.
-Testing APIs helps validate business logic, data processing,
-and system integrations before the UI layer is tested.
+API testing verifies backend functionality without relying on the user interface.
+It helps detect issues earlier in the development lifecycle.
 </p>
 
 <p>
-A good API testing approach includes validating response status codes,
-response structure, response time, authentication behavior,
-and data consistency.
+QA engineers should validate response codes, response structure,
+error handling, authentication logic and performance metrics.
 </p>
-
-<p>
-Tools such as Postman and REST clients significantly improve
-API testing efficiency and help identify backend issues early.
-</p>
-
 </div>
 
 
 <div id="b3" class="blog">
-
-<h3>Using AI to Generate Test Cases</h3>
+<h3>Using AI for Test Case Generation</h3>
 
 <p>
-Artificial Intelligence is rapidly transforming software testing.
-AI tools can assist QA engineers in generating test scenarios,
-suggesting edge cases, and identifying risk areas within an application.
+AI tools can help QA engineers quickly generate test cases,
+identify edge cases and improve coverage.
 </p>
 
 <p>
-AI can also analyze logs, error messages and network calls to help
-with faster root cause analysis.
+However, human validation is still required to ensure
+test scenarios reflect real user behaviour.
 </p>
-
-<p>
-While AI does not replace testers, it significantly enhances
-productivity and improves test coverage.
-</p>
-
 </div>
 
 
 <div id="b4" class="blog">
-
 <h3>Writing Better Bug Reports</h3>
 
 <p>
-A well-written bug report helps developers quickly understand
-the issue and reproduce the problem.
-</p>
-
-<p>
-A good bug report should always include clear steps to reproduce,
-expected results, actual results, environment details,
-and screenshots if applicable.
-</p>
-
-<p>
-Clear and structured bug reports improve collaboration
-between QA and development teams and help resolve issues faster.
+Clear bug reports help developers reproduce issues faster.
+Each report should include steps to reproduce, expected result,
+actual result and screenshots if available.
 </p>
 
 </div>
@@ -461,9 +350,23 @@ function toggleMode(){
 document.body.classList.toggle("dark")
 }
 
-function showBlog(id){
-document.querySelectorAll(".blog").forEach(b=>b.style.display="none")
-document.getElementById(id).style.display="block"
+function toggleBlog(id){
+
+let blog = document.getElementById(id)
+
+if(blog.style.display === "block"){
+blog.style.display="none"
+}
+else{
+
+document.querySelectorAll(".blog").forEach(b=>{
+b.style.display="none"
+})
+
+blog.style.display="block"
+
+}
+
 }
 
 </script>
