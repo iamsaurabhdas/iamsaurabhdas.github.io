@@ -36,7 +36,7 @@ text-decoration:none;
 font-weight:bold;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
 padding:80px 20px;
@@ -50,20 +50,14 @@ width:140px;
 border-radius:50%;
 }
 
-.hero h1{
-margin-top:15px;
-}
-
-.hero button,
 .hero a{
-margin-top:15px;
 display:inline-block;
+margin:10px;
 background:#2563eb;
 color:white;
 padding:12px 20px;
 border-radius:8px;
 text-decoration:none;
-border:none;
 }
 
 /* SECTIONS */
@@ -96,6 +90,26 @@ background:#1e293b;
 text-decoration:none;
 color:#2563eb;
 font-weight:bold;
+}
+
+/* SKILLS */
+
+.skill{
+max-width:700px;
+margin:auto;
+}
+
+.bar{
+background:#ddd;
+height:12px;
+border-radius:6px;
+margin-bottom:20px;
+}
+
+.progress{
+height:12px;
+background:#2563eb;
+border-radius:6px;
 }
 
 /* CONTACT */
@@ -140,9 +154,11 @@ cursor:pointer;
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#portfolio">QA Work</a>
+<a href="#ai">AI in QA</a>
 <a href="#blog">Blog</a>
 <a href="bug-gallery.html">Bug Gallery</a>
 <a href="testcases.html">Test Cases</a>
+<a href="bug-report-example.html">Bug Report</a>
 <a href="#contact">Contact</a>
 
 </nav>
@@ -180,11 +196,12 @@ View LinkedIn
 
 I am a QA Lead with more than 10 years of experience in
 software testing and quality assurance. I specialize in
-manual testing, API testing, product validation,
-and leading QA teams to deliver high-quality software products.
+manual testing, regression testing, API testing,
+bug investigation, and QA process improvement.
 
-Currently working on multiple products including
-commenting systems, engagement units, and content platforms.
+I have worked on multiple products including commenting
+systems, engagement widgets, and content platforms,
+ensuring product stability and high-quality releases.
 
 </p>
 
@@ -196,33 +213,25 @@ commenting systems, engagement units, and content platforms.
 
 <h2>Skills</h2>
 
-<div class="cards">
+<div class="skill">
 
-<div class="card">
-<h3>Manual Testing</h3>
-<p>Functional testing, regression testing, exploratory testing.</p>
-</div>
+<p>Manual Testing</p>
+<div class="bar"><div class="progress" style="width:95%"></div></div>
 
-<div class="card">
-<h3>API Testing</h3>
-<p>Postman, Chrome DevTools network analysis.</p>
-</div>
+<p>API Testing</p>
+<div class="bar"><div class="progress" style="width:85%"></div></div>
 
-<div class="card">
-<h3>Bug Tracking</h3>
-<p>JIRA bug reporting and issue lifecycle management.</p>
-</div>
+<p>Bug Investigation</p>
+<div class="bar"><div class="progress" style="width:90%"></div></div>
 
-<div class="card">
-<h3>QA Leadership</h3>
-<p>Managing QA processes and test planning.</p>
-</div>
+<p>QA Leadership</p>
+<div class="bar"><div class="progress" style="width:88%"></div></div>
 
 </div>
 
 </section>
 
-<!-- QA WORK -->
+<!-- QA PORTFOLIO -->
 
 <section class="section" id="portfolio">
 
@@ -243,9 +252,54 @@ commenting systems, engagement units, and content platforms.
 </div>
 
 <div class="card">
-<h3>QA Case Study</h3>
-<p>Example of how QA testing improved product quality.</p>
-<a href="qa-case-study.html">Read Case Study</a>
+<h3>Bug Report Example</h3>
+<p>Example of professional bug documentation.</p>
+<a href="bug-report-example.html">View Bug Report</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- AI IN QA -->
+
+<section class="section" id="ai">
+
+<h2>AI in QA</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>AI Test Case Generation</h3>
+
+<p>
+Using AI tools to generate test scenarios and
+improve test coverage for complex systems.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>AI Bug Analysis</h3>
+
+<p>
+Using AI assistants to analyze logs and identify
+possible root causes faster.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>AI Assisted QA Workflow</h3>
+
+<p>
+Leveraging modern AI tools to improve testing
+productivity and QA efficiency.
+</p>
+
 </div>
 
 </div>
